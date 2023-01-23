@@ -1,0 +1,434 @@
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #E5E5CB;
+}
+a:hover {
+  color: red;
+}
+
+#barraNavegacao {
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#botao {
+ display: none;
+}
+
+.areaLogo {
+  display: flex;
+  width: 25%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  background-size:100% 100%;
+  border: 1px solid green;
+}
+
+.navegacao {
+  display: flex;
+  width: 75%;
+  background-color: #362706;
+  justify-content: flex-end;
+}
+.navegacao ul {
+  display: relative;
+  list-style: none;
+}
+.navegacao ul li {
+  display: inline-block;
+  margin-right: 12px;
+  line-height: 30px;
+  font-size: 18px;
+}
+.areaForms {
+  display: flex;
+  width: fit-content;
+  
+}
+.busca {
+  display: flex;
+  align-items: flex-end;
+  line-height: 30px;
+  margin-right: 8px;
+}
+
+.caixaBusca {
+  background-color: gainsboro;
+  width: 20vw;
+  text-align: center;
+  border-radius: 8px;
+}
+.botaoBuscar {
+  font-size: 15px;
+  color: green;
+  align-self: center;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0, 0.4);
+}
+
+.areaDeLogin {
+  padding: 5px;
+  display: flex;
+  align-items:flex-end;
+  margin-right: 10px;
+}
+
+.textoLogin { 
+  display: none;
+}
+.botaoLogar {
+  font-size: 20px;
+}
+.principal {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 10vw 78.1vw 10vw;
+  background-image:url(../imagens/ParedeDeFogo.png);
+  background-size: cover;
+  width: 100%;
+  
+}
+.divCentral {
+  width: 100%;
+
+}
+.areaDestaques {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  color: white;
+  width: 100%;
+  height: 33vh;
+  margin-top: 3px;
+  background-color: rgba(147, 26, 37, 0.6);
+  justify-content: space-between;
+  gap: 5px;
+  align-self: center;
+  overflow: hidden;
+}
+.destaque {
+  background: rgba(0,0,0, 0.8);
+  border-radius: 8px;
+  line-height: 1rem;
+  overflow: hidden;
+  height: 40vh;
+  position: relative;
+  width: 100%;
+
+}
+
+.imagensDestaques {
+  width: 100%;
+  display: inline-block;
+}
+
+.imagensDestaques img {
+  width: 98%;
+  height: 80%;
+  border-radius: 8px;
+  border: 2px solid gray;
+}
+
+.imagensDestaques img:hover {
+  border: 2px solid gainsboro;
+  cursor: pointer;
+}
+
+.imagensDestaques figcaption{
+  position: absolute;
+  top: 145px;
+  right: 35px;
+  font-size: 18px;
+  color: white;
+  text-shadow: 05px 05px 5px black;
+}
+
+.textosIniciais {
+  display: grid;
+  grid-template-columns: 98%;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+  color: white;
+}
+.propagandaEsquerda {
+  display:flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.9);
+  height: 100vh;
+  color: white;
+}
+
+.propagandaDireita {
+  padding-right: 8px;
+  position: sticky;
+  display:flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.9);
+  height: 100vh;
+  color: white;
+}
+
+.textosIniciais p {
+  text-align: justify;
+  padding: 20px;
+
+}
+
+.rodape {
+  display: flex;
+  bottom: 0;
+  background-color: #696969;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+.rodape p {
+  text-align: center;
+}/*# sourceMappingURL=home.css.map */
+
+/*------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+  body,html {
+    width: 99vw;
+    font-size: 18px;
+  }
+
+  #barraNavegacao {
+    display: block;
+    height: fit-content;
+    width: 100vw;
+    
+  }
+
+  #botao {
+    display: inline-block;
+    color: white;
+    margin-right: 5%;
+  }
+  .areaLogo {
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    color: #D8D8D8;
+  }
+  
+  .logo {
+    margin-left: 5%;
+  }
+
+  .navegacao {
+    height: 0vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.8);
+    overflow-x: hidden;
+    transition: height 0.5s;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .linksNavegacao {
+    height: fit-content;
+    width: 100%;
+    
+  }
+  .navegacao ul {
+    list-style: none;
+    text-align: right;
+    width: 100%;
+  }
+  .navegacao ul li {
+    display: block;
+    line-height: 25px;
+    font-size: 20px;
+    color: #E5E5CB;
+    padding-bottom: 0.4vh;
+    margin-right: 17%;
+  }
+
+  .navegacao ul li a{
+    color: #E5E5CB;
+    font-size: 20px;
+  }
+  .areaForms {
+    width: 100%;
+    flex-direction: column-reverse;
+
+  }
+  .busca {
+    height: fit-content;
+    width:95%;
+    display: flex;
+    align-items: unset;
+    line-height: 30px;
+    padding-right: 5%;
+    justify-content: flex-end;
+  }  
+ .caixaBusca {
+  width: 80%;
+ }
+  .areaDeLogin { 
+    height: fit-content;
+    display: flex;
+    padding: 0px;
+    padding-right: 5%;
+    align-items:unset;
+    justify-content: flex-end;
+  }
+
+  .textoLogin {
+    display: inline-block;
+    margin-right: 14px;
+  }
+
+  .principal {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 100vw;
+    background-color: #191A19;
+    gap: 0;
+    background-image:url(../imagens/ParedeDeFogo.png);
+    background-size: cover;
+    width: 100vw;
+  }
+
+  .areaDestaques {
+    border: 1px solid yellow;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 100vw;
+    color: white;
+    width:98vw;
+    height: fit-content;
+    margin-top: 3px;
+    background-color: rgba(147, 26, 37, 0.1);
+    justify-content: space-between;
+    gap: 0px;
+    align-self: center;
+    overflow: hidden;
+    
+  }
+
+   .destaque {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(147, 26, 37, 0.1);
+   }
+
+   .imagensDestaques {
+    border: 1px solid blue;
+    display: inline-block;
+    position: relative;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  
+  .imagensDestaques img {
+    height: 90%;
+    border-radius: 8px;
+    border: 2px solid gray;
+  }
+
+  .imagensDestaques figcaption{
+    position: absolute;
+    top: 245px;
+    right: 35px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 05px 05px 5px black;
+  }
+  
+  .propagandaEsquerda {
+    border: 1px solid red;
+    display:flex;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.9);
+    height: 15vh;
+    width: 100vw;
+    top:auto;
+    position:static;
+    color: white;
+  }
+  
+  .propagandaDireita {
+    border: 1px solid red;
+    display:flex;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.9);
+    height: 15vh;
+    width: 97.8vw;
+    top:auto;
+    position:static;
+    color: white;
+  }
+  
+  .textosIniciais {
+    display: grid;
+    border: 1px solid green;
+    grid-template-columns: 98%;
+    background-color: rgba(0,0,0, 0.9);
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .textosIniciais p {
+    text-align: justify;
+    padding: 20px;
+  
+  }
+
+  .rodape {
+    display: flex;
+    bottom: 0;
+    background-color: #696969;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100vw;
+  }
+  .rodape p {
+    text-align: center;
+  }/*# sourceMappingURL=home.css.map */
+}

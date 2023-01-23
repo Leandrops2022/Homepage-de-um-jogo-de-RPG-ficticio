@@ -1,0 +1,56 @@
+$cor-primaria: #000000
+$cor-secundaria: red
+$cor-terciaria: #E5E5CB
+$cor-quaternaria:#D8D8D8
+$cor-quinternaria: #191A19
+
+html, body, h1 
+    margin: 0
+    padding: 0
+
+html, body 
+    height: 100vh
+    display: flex
+    flex-direction: column
+a
+    text-decoration: none
+    color: $cor-terciaria
+    &:hover
+        color: $cor-secundaria
+#barraNavegacao
+    display: flex
+    width: 100vw
+    height: fit-content
+
+.navegacao
+    display: flex
+    width: 100%
+    background-color: $cor-primaria
+    justify-content: flex-end
+    ul
+        
+        display: relative
+        list-style: none
+        li 
+            display: inline-block
+            margin-right: 12px
+            line-height: 30px
+            font-size: 20px
+
+.principal
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    background-color: $cor-quinternaria
+
+.rodape
+    display: flex
+    bottom: 0
+    background-color: $cor-quaternaria
+    height: 20vh
+    justify-content: center
+    align-items: center
+    p
+        text-align: center
+                
+        
