@@ -34,12 +34,17 @@ a:hover {
   display: flex;
   width: 25%;
   background-color: white;
+  background-image: url("./magiclogo.jpg");
   justify-content: center;
   align-items: center;
   background-size:100% 100%;
-  border: 1px solid green;
 }
 
+.logo {
+  color: cyan;
+  text-shadow: 2px 2px 5px black;
+  font-size: 28;
+}
 .navegacao {
   display: flex;
   width: 75%;
@@ -100,7 +105,7 @@ a:hover {
   display: grid;
   gap: 0;
   grid-template-columns: 10vw 78.1vw 10vw;
-  background-image:url(../imagens/ParedeDeFogo.png);
+  background-image:url(./ParedeDeFogo.png);
   background-size: cover;
   width: 100%;
   
@@ -241,7 +246,8 @@ a:hover {
   }
   
   .logo {
-    margin-left: 5%;
+    text-align: center;
+    padding-left: 27%;
   }
 
   .navegacao {
@@ -311,7 +317,6 @@ a:hover {
   }
 
   .principal {
-    border: 1px solid blue;
     display: grid;
     grid-template-columns: 100vw;
     background-color: #191A19;
@@ -322,7 +327,6 @@ a:hover {
   }
 
   .areaDestaques {
-    border: 1px solid yellow;
     padding-top: 0;
     display: grid;
     grid-template-columns: 100vw;
@@ -352,7 +356,6 @@ a:hover {
    }
 
    .imagensDestaques {
-    border: 1px solid blue;
     display: inline-block;
     position: relative;
     width: 98%;
@@ -378,21 +381,22 @@ a:hover {
   }
   
   .propagandaEsquerda {
-    border: 1px solid red;
     display:flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(0,0,0, 0.9);
     height: 15vh;
     width: 100vw;
     top:auto;
     position:static;
     color: white;
+    text-align: center;
   }
   
   .propagandaDireita {
-    border: 1px solid red;
     display:flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(0,0,0, 0.9);
     height: 15vh;
     width: 97.8vw;
@@ -403,7 +407,6 @@ a:hover {
   
   .textosIniciais {
     display: grid;
-    border: 1px solid green;
     grid-template-columns: 98%;
     background-color: rgba(0,0,0, 0.9);
     width: 100%;
