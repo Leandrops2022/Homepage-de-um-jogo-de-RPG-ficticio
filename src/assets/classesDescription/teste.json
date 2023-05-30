@@ -1,0 +1,29 @@
+[
+    {
+        "id": 0,
+        "photo": {
+            "url": "https://live.staticflickr.com/65535/52937294661_1db2fd43dc_m.jpg",
+            "alt": "paladin"
+        },
+        "name": "Paladin",
+        "description": "Paladins are virtuous warriors who fight for justice, righteousness, and honor in the kingdom.They are known for their exceptional combat abilities, including their proficiency with weapons and their ability to heal themselves and others. As a paladin, players can expect to be a powerful force on the battlefield, with access to a range of divine spells and abilities that can be used to bolster their allies and smite their foes.In addition to their combat prowess, paladins are representatives of the divine, tasked with upholding the laws and traditions of the kingdom. They are often seen as pillars of society, respected for their integrity and moral strength. Choosing to play as a paladin can be an excellent choicefor players who want to explore themes of honor, justice, and morality, while also enjoying the thrill of battle and the satisfaction of protecting their allies."
+    },
+    {
+        "id": 1,
+        "photo": {
+            "url": "https://live.staticflickr.com/65535/52936704932_9b05ecf3f1_b.jpg",
+            "alt": "Wizard"
+        },
+        "name": "Wizard",
+        "description": "The wizard class specializes in spellcasting and magical abilities. They are often portrayed as having a high intelligence and magical aptitude, but are often physically weaker than other classes. Wizards may have a wide range of spells at their disposal, including offensive spells like fireball or lightning bolt, defensive spells like shield or mage armor, and utility spells like teleportation or invisibility. Wizards also have access to powerful magical artifacts and familiars that can aid them in battle. Playing as a wizard can be challenging, but also rewarding due to their ability to control the battlefield and deal massive amounts of damage with their spells."
+    },
+    {
+        "id": 2,
+        "photo": {
+            "url": "https://live.staticflickr.com/65535/52937494556_09cde1e9c5_m.jpg",
+            "alt": "Human Warrior"
+        },
+        "name": "Warrior",
+        "description": "the warrior class is a fierce and powerful force on the battlefield. Armed with heavy weapons and armor, they are able to withstand a great deal of punishment while delivering devastating blows to their enemies. However, their reliance on physical strength means they may struggle against fast or ranged attacks. Some examples of warrior skills include Cleave, which allows the warrior to strike multiple enemies at once, and Shield Bash, which stuns opponents and allows the warrior to gain the upper hand in combat. Choose the warrior class if you enjoy a more straightforward approach to combat and the thrill of smashing through enemy lines."
+    }
+]
