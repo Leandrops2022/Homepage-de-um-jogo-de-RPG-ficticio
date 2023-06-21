@@ -1,0 +1,51 @@
+.classes {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  color: white;
+  gap: 0;
+}
+.classes .name {
+  box-sizing: border-box;
+  grid-column: 1/span 3;
+  padding-left: 1rem;
+}
+.classes .class-image {
+  width: 200px;
+  height: 200px;
+}
+.classes .class-description {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0.9rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 680px) {
+  .classes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: white;
+    gap: 0;
+  }
+  .classes .name {
+    justify-self: center;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding-left: 1rem;
+    grid-column: 1/span 3;
+  }
+  .classes .class-image {
+    width: 92vw;
+    height: 25vh;
+    grid-column: 1/span 3;
+  }
+  .classes .class-description {
+    grid-column: 1/span 3;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.9rem;
+    text-align: justify;
+  }
+}/*# sourceMappingURL=Item.module.css.map */

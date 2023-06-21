@@ -1,0 +1,128 @@
+.main {
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.item1 {
+  grid-area: imagem;
+}
+
+.item2 {
+  grid-area: texto;
+}
+
+.item3 {
+  grid-area: texto2;
+}
+
+.item4 {
+  grid-area: imagem2;
+}
+
+.item5 {
+  grid-area: imagem3;
+}
+
+.item6 {
+  grid-area: texto3;
+}
+
+.item6,
+.item2,
+.item3 {
+  font-family: "Roboto", sans-serif;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 20rem;
+}
+.item6 p,
+.item2 p,
+.item3 p {
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 0 0.5rem;
+}
+
+.item5,
+.item1,
+.item4 {
+  height: 40vh;
+  box-sizing: border-box;
+  width: 30vw;
+  border: 4px solid silver;
+  border-radius: 8px;
+  background: rgb(0, 0, 0);
+}
+.item5 img,
+.item1 img,
+.item4 img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  color: white;
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: "imagem texto texto" "texto2 texto2 imagem2" "imagem3 texto3 texto3";
+  grid-gap: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-position: 0 -20rem;
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding: 10px;
+}
+.grid-container div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 680px) {
+  .main {
+    background-position: -20rem -20rem;
+    min-height: 100vh;
+  }
+  .grid-container {
+    gap: 3rem;
+    grid-template-areas: "imagem imagem imagem" "texto  texto  texto" "imagem2 imagem2 imagem2" "texto2 texto2 texto2" "imagem3 imagem3 imagem3" "texto3 texto3 texto3";
+  }
+  .item1,
+  .item4,
+  .item5 {
+    height: 40vh;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .item1 img,
+  .item4 img,
+  .item5 img {
+    width: 100%;
+    height: 100%;
+  }
+  .item6 p,
+  .item2 p,
+  .item3 p {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=Home.module.css.map */

@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.main h1 {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=Support.module.css.map */

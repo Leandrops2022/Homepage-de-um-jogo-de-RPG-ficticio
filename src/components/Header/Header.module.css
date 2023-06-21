@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+@keyframes backlight {
+  0% {
+    opacity: 1;
+    box-shadow: 0px 0px 80px rgb(165, 214, 236);
+    border-radius: 50%;
+  }
+  25% {
+    opacity: 0.8;
+    box-shadow: 0 0 70px silver;
+    border-radius: 50%;
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 60px rgb(165, 214, 236);
+    border-radius: 50%;
+  }
+  75% {
+    opacity: 0.8;
+    box-shadow: 0 0 70px silver;
+    border-radius: 50%;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 80px silver;
+    border-radius: 50%;
+  }
+}
+.container {
+  position: sticky;
+  top: 0;
+  font-family: "Metal Mania", cursive;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+  width: 100%;
+  background: rgb(158, 158, 158);
+  background: linear-gradient(63deg, rgb(70, 70, 75) 0%, rgb(0, 0, 0) 100%);
+  margin-bottom: 0;
+}
+.container .silver-border {
+  width: 100%;
+  grid-column: 1/-1;
+  height: 0.4rem;
+}
+.container .area-logo {
+  display: flex;
+  background-color: transparent;
+}
+.container .area-logo .logo {
+  width: 100%;
+  height: 100%;
+}
+.container .area-logo .logo:hover {
+  cursor: pointer;
+}
+.container .area-logo button {
+  display: none;
+}
+.container .area-logo button:active {
+  box-shadow: inset 1px 1px 1px black;
+}
+.container .area-logo button:hover {
+  cursor: pointer;
+}
+.container .area-logo button__icon {
+  color: darkslategray;
+}
+.container .navigation-show {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.container .navigation-show ul {
+  list-style: none;
+}
+.container .navigation-show ul li {
+  animation: backlight infinite linear 3s;
+  display: inline-block;
+  margin-right: 1.2vw;
+  margin-left: 1.2vw;
+  line-height: 30px;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+.container .navigation-show ul li a {
+  text-decoration: none;
+  color: darkgray;
+}
+.container .navigation-show ul li a:hover {
+  color: white;
+}
+.container .play-button {
+  background-color: transparent;
+  color: darkgray;
+  border: 1px solid rgb(227, 196, 79);
+  width: 20vw;
+  perspective: 1000px;
+  letter-spacing: 0.2rem;
+}
+.container .play-button:hover {
+  background: radial-gradient(circle, rgb(253, 252, 226) 19%, rgb(227, 196, 79) 100%);
+  cursor: pointer;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+}
+.container .play-button:active {
+  box-shadow: inset 2px 2px 4px black;
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    background: linear-gradient(63deg, rgba(70, 70, 75, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+  }
+  .container .area-logo {
+    justify-content: flex-end;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 6fr;
+    height: 4.5rem;
+  }
+  .container .area-logo button {
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-right: 0.1rem;
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(63deg, rgba(70, 70, 75, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    color: antiquewhite;
+  }
+  .container .area-logo button:active {
+    box-shadow: inset 1px 1px 1px black;
+  }
+  .container .area-logo button:hover {
+    cursor: pointer;
+  }
+  .container .area-logo button__icon {
+    color: darkslategray;
+  }
+  .container .navigation-hide {
+    display: none;
+  }
+  .container .navigation-show {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+    margin-top: 4.8rem;
+    width: 100%;
+    background: linear-gradient(63deg, rgba(70, 70, 75, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .navigation-show ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .navigation-show ul li {
+    margin: auto;
+    line-height: 40px;
+  }
+  .container .play-button {
+    width: 40vw;
+  }
+}
+@media screen and (min-width: 681px) and (max-width: 999px) {
+  .container .play-button {
+    width: 13vw;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

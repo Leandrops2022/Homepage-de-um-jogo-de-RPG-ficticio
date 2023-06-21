@@ -1,0 +1,13 @@
+.main {
+  background-color: black;
+  min-height: 100vh;
+}
+.main .news {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.main .news p {
+  font-size: 1.3rem;
+}/*# sourceMappingURL=News.module.css.map */

@@ -1,9 +1,25 @@
 .main {
-	background-image: url(../../assets/imgs/The_Arcanum2-removebg-preview.png);
-	background-color: black;
-	background-repeat: repeat-y;
 	background-size: cover;
-	background-position: -2rem -20rem;
+	min-height: 100vh;
+}
+
+.background-video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+
+}
+
+.background-video video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
 	min-height: 100vh;
 }
 
@@ -54,12 +70,11 @@
 	width: 30vw;
 	border: 4px solid silver;
 	border-radius: 8px;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 1);
 
 	& img {
 		width: 100%;
 		height: 100%;
-
 	}
 
 }
@@ -74,7 +89,7 @@
 		'texto2 texto2 imagem2'
 		'imagem3 texto3 texto3';
 	grid-gap: 10px;
-	background-color: rgba(0, 0, 0, 0.94);
+	background-color: rgba(0, 0, 0, 0.7);
 	background-position: 0 -20rem;
 	background-repeat: repeat-y;
 	background-size: cover;
