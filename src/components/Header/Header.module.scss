@@ -116,8 +116,9 @@
 		color: darken(gainsboro, 20%);
 		border: 1px solid rgba(227, 196, 79, 1);
 		width: 20vw;
-		perspective: 1000px;
 		letter-spacing: 0.2rem;
+		border-radius: 50%;
+		line-height: 2.3rem;
 
 		&:hover {
 			background: radial-gradient(circle, rgba(253, 252, 226, 1) 19%, rgba(227, 196, 79, 1) 100%);
