@@ -1,0 +1,130 @@
+.main {
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.grid-container {
+  color: white;
+  display: flex;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 0.9rem;
+  justify-content: center;
+}
+.grid-container span {
+  text-align: center;
+  display: block;
+  color: black;
+}
+.grid-container span a {
+  text-decoration: none;
+  color: blue;
+}
+.grid-container span a:visited {
+  color: blueviolet;
+}
+.grid-container form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-image: url("../../assets//imgs/oldParchment.webp");
+  background-size: cover;
+}
+.grid-container form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.grid-container form fieldset label {
+  align-self: flex-start;
+}
+.grid-container form fieldset h1 {
+  color: black;
+}
+.grid-container form fieldset .birth {
+  text-align: left;
+  margin-left: 0.5rem;
+  display: inline-block;
+  color: black;
+}
+.grid-container form fieldset .agreement {
+  justify-content: flex-end;
+  margin: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.grid-container form fieldset .agreement input {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  width: 1.5rem;
+  height: 1rem;
+  line-height: 2rem;
+}
+.grid-container form fieldset .agreement label {
+  box-sizing: border-box;
+  text-align: left;
+  display: inline;
+  padding-left: 0.5rem;
+  margin: 0;
+  color: black;
+  line-height: 2rem;
+}
+.grid-container form fieldset input {
+  margin: 0.5rem;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+.grid-container form fieldset select {
+  margin: 0.5rem;
+  width: 10rem;
+  display: block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  align-self: flex-start;
+}
+.grid-container form fieldset select option {
+  width: 10rem;
+}
+.grid-container form fieldset button {
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 80%;
+  margin-top: 1rem;
+  align-self: center;
+  line-height: 2rem;
+}
+.grid-container form fieldset button:active {
+  box-shadow: inset 1px 2px 2px black;
+}
+.grid-container form fieldset button:hover {
+  cursor: pointer;
+  background-color: goldenrod;
+  color: black;
+}
+
+@media screen and (max-width: 680px) {
+  .main {
+    background-position: -20rem -20rem;
+    min-height: 100vh;
+  }
+  .grid-container form {
+    width: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}/*# sourceMappingURL=Play.module.css.map */

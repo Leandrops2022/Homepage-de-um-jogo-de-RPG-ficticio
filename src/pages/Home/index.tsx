@@ -7,11 +7,7 @@ export default function Home() {
 
     return (
         <div className={styles.main}>
-            <div className={styles['background-video']}>
-                <video autoPlay loop muted>
-                    <source src='/game.mp4' type='video/mp4' />
-                </video>
-            </div>
+
             <div className={styles['grid-container']}>
 
                 <div className={styles.item1}>

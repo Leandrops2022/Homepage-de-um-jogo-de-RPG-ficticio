@@ -1,0 +1,163 @@
+.main {
+	background-size: cover;
+	min-height: 100vh;
+}
+
+
+.grid-container {
+	color: white;
+	display: flex;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 0.9rem;
+	justify-content: center;
+
+	& span {
+		text-align: center;
+		display: block;
+		color: black;
+
+		a {
+			text-decoration: none;
+			color: blue;
+
+			&:visited {
+				color: blueviolet;
+			}
+		}
+	}
+
+	& form {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		align-items: center;
+		padding: 1rem;
+		box-sizing: border-box;
+		background-image: url('../../assets//imgs/oldParchment.webp');
+		background-size: cover;
+
+		& fieldset {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 80%;
+
+			label {
+				align-self: flex-start;
+			}
+
+			h1 {
+				color: black;
+			}
+
+			.birth {
+				text-align: left;
+				margin-left: 0.5rem;
+				display: inline-block;
+				color: black;
+			}
+
+			.agreement {
+				justify-content: flex-end;
+				margin: 0.5rem;
+				width: 100%;
+				border-radius: 5px;
+				box-sizing: border-box;
+
+
+				& input {
+					display: inline;
+					padding: 0;
+					margin: 0;
+					width: 1.5rem;
+					height: 1rem;
+					line-height: 2rem;
+				}
+
+				& label {
+					box-sizing: border-box;
+					text-align: left;
+					display: inline;
+					padding-left: 0.5rem;
+					margin: 0;
+					color: black;
+					line-height: 2rem;
+				}
+			}
+
+			& input {
+				margin: 0.5rem;
+				width: 100%;
+				display: block;
+				border-radius: 5px;
+				box-sizing: border-box;
+				padding: 0.5rem;
+
+			}
+
+			& select {
+				margin: 0.5rem;
+				width: 10rem;
+				display: block;
+				border-radius: 5px;
+				box-sizing: border-box;
+				padding: 0.5rem;
+				align-self: flex-start;
+
+				& option {
+					width: 10rem;
+				}
+
+			}
+
+			& button {
+
+				border-radius: 5px;
+				box-sizing: border-box;
+				padding: 0.5rem;
+				margin: 0.5rem;
+				width: 80%;
+				margin-top: 1rem;
+				align-self: center;
+				line-height: 2rem;
+
+				&:active {
+					box-shadow: inset 1px 2px 2px black;
+				}
+
+				&:hover {
+					cursor: pointer;
+					background-color: goldenrod;
+					color: black;
+				}
+			}
+		}
+
+
+
+	}
+}
+
+
+@media screen and (max-width: 680px) {
+	.main {
+		background-position: -20rem -20rem;
+		min-height: 100vh;
+	}
+
+	.grid-container {
+
+		& form {
+			width: 90%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+	}
+
+
+}

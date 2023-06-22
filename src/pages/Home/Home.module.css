@@ -3,25 +3,6 @@
   min-height: 100vh;
 }
 
-.background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.background-video video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100vh;
-}
-
 .item1 {
   grid-area: imagem;
 }
@@ -54,6 +35,7 @@
   height: fit-content;
   box-sizing: border-box;
   padding: 20rem;
+  align-self: center;
 }
 .item6 p,
 .item2 p,

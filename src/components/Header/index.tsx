@@ -48,8 +48,16 @@ export default function Header() {
                     <li><Link to={'/news'} onClick={handleLink}>News</Link></li>
                     <li><Link to={'/support'} onClick={handleLink}>Support</Link></li>
                     <li><Link to={'/community'} onClick={handleLink}>Community</Link></li>
+                    <li><Link to={'/login'} onClick={handleLink}>Login</Link></li>
                     <li>
-                        <button className={styles['play-button']} onClick={changeMenu}>Play Now</button>
+                        <Link to={'/play'}>
+                            <button
+                                className={styles['play-button']}
+                                onClick={handleLink}
+                            >
+                                Play Now
+                            </button>
+                        </Link>
                     </li>
                 </ul>
             </nav>
